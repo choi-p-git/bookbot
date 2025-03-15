@@ -1,14 +1,9 @@
-frankenstein = "./books/frankenstein.txt"
-words = ""
+frankenstein = "./books/frankenstein.txt"   # set book location
 
-def get_book_text(book_path):
-    with open(book_path) as f:
-        book_text = f.read()
-        return book_text
-    
-def main(book):
-    book_text = get_book_text(book)
-    words = book_text.split()
-    print(f"{len(words)} words found in the document")
+# Word_counter function in remote location
 
-main(frankenstein)
+from stats import word_counter
+from stats import char_counter
+
+word_counter(frankenstein)
+char_counter(frankenstein)
