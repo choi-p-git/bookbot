@@ -4,10 +4,8 @@ if len(sys.argv) < 2:
     print ("Usage: python3 main.py <path_to_book>")
     sys.exit(1)
 
-# Word_counter function in remote location
-
-from stats import word_counter
-from stats import char_sort
+from stats import word_counter  # Word_counter function in remote location
+from stats import char_sort     # Char_sort functions in remote location
 
 print("============ BOOKBOT ============")
 print(f"Analyzing book found at {sys.argv[1]}...")
